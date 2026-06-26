@@ -1,32 +1,27 @@
-# React + TypeScript + Vite
+# Job Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A clean, fast web app to track your job applications and visualize your progress.
 
-Currently, two official plugins are available:
+## Live Demo
+👉 [job-tracker-41x9jhlan-hi1ri.vercel.app](https://job-tracker-41x9jhlan-hi1ri.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- Add and manage job applications
+- Track status: Applied, Interview, Offer, Rejected, No reply
+- Filter and search by company or role
+- Stats dashboard with response rate and offer rate
+- Status breakdown chart and applications by source chart
+- Export all applications to CSV
+- Data persists in localStorage — no backend needed
 
-## React Compiler
+## Tech Stack
+- React 18 + TypeScript
+- Vite
+- Tailwind CSS
+- Chart.js + react-chartjs-2
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Run Locally
+git clone https://github.com/hi2rii/job-tracker.git
+cd job-tracker
+npm install
+npm run dev
