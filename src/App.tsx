@@ -1,5 +1,4 @@
 import { useState } from "react"
-import type { Status } from "./types/Application"
 import { useApplications } from "./services/useApplications"
 import ApplicationForm from "./components/ApplicationForm"
 import ApplicationList from "./components/ApplicationList"
